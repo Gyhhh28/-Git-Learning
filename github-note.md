@@ -18,7 +18,7 @@ xxx是本次提交的说明 一定要写
 git push origin main
 提交到远程库
 
-**删除文件**
+**删除文件** <br>
 直接在文件管理器中删，或者用rm命令删：
 $ rm test.txt
 
@@ -45,3 +45,30 @@ $ git commit -m "remove test.txt"
 
 最后 把远程库里的同步一下
 $ git push origin main
+
+## Git分支
+分支就相当于平行宇宙 在分支里的操作不影响main 但结果是可以合并的
+创建分支 git branch xx
+切换到分支 git checkout xx
+这两步骤可以合并git checkout -b xx
+查看所有分支 git branch
+删除分支 git branch -d xxx
+
+
+更新代码到分支
+先切换到分支
+git add ./
+git commit -m ""
+git push origin 分支名
+
+合并分支到main
+先切换到main   git checkout main
+然后合并 git merge 分支名
+最后删除分支 git branch -d 分支（删除本地分支）
+git删除远程分支
+git push origin --delete [branch_name]
+
+git查看分支：
+查看本地分支 git branch
+查看远程分支 git branch -r
+查看本地和远程分支 git branch -a
