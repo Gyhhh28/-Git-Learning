@@ -79,7 +79,7 @@ git push origin --delete [branch_name]
 
 
 
-** 如何把本地仓库里的内容搬运到github上 **
+**如何把本地仓库里的内容搬运到github上**
 首先在本地目标仓库打开bash 输入git init 将当前仓库变成git可管理的仓库  
 然后add+commit一波操作猛如虎  
 再在git创建远程仓库   
